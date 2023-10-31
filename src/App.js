@@ -21,7 +21,7 @@ function App() {
         <h1 className="tilte"> Rick & Morty </h1>
 
         {characters ? (
-          <Characters characters={characters} />
+          <Characters characters={characters} setCharacters={setCharacters} />
         ) : (
           <>
             <img src={imageRickMorty} alt="Rick & Morty" className="img-home" />
